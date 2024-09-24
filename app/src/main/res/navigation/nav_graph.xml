@@ -18,5 +18,91 @@
         android:id="@+id/secondFragment"
         android:name="cl.bootcamp.ind_12.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_sakuragiFragment"
+            app:destination="@id/sakuragiFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_ryotaFragment"
+            app:destination="@id/ryotaFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_akagiFragment2"
+            app:destination="@id/akagiFragment2" />
+        <action
+            android:id="@+id/action_secondFragment_to_mitsuiFragment"
+            app:destination="@id/mitsuiFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_rukawaFragment"
+            app:destination="@id/rukawaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/akagiFragment2"
+        android:name="cl.bootcamp.ind_12.AkagiFragment"
+        android:label="fragment_akagi"
+        tools:layout="@layout/fragment_akagi" >
+        <action
+            android:id="@+id/action_akagiFragment2_to_videoAkagiFragment"
+            app:destination="@id/videoAkagiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mitsuiFragment"
+        android:name="cl.bootcamp.ind_12.MitsuiFragment"
+        android:label="fragment_mitsui"
+        tools:layout="@layout/fragment_mitsui" >
+        <action
+            android:id="@+id/action_mitsuiFragment_to_videoMitsuiFragment"
+            app:destination="@id/videoMitsuiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rukawaFragment"
+        android:name="cl.bootcamp.ind_12.RukawaFragment"
+        android:label="fragment_rukawa"
+        tools:layout="@layout/fragment_rukawa" >
+        <action
+            android:id="@+id/action_rukawaFragment_to_videoRukawaFragment"
+            app:destination="@id/videoRukawaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ryotaFragment"
+        android:name="cl.bootcamp.ind_12.RyotaFragment"
+        android:label="fragment_ryota"
+        tools:layout="@layout/fragment_ryota" >
+        <action
+            android:id="@+id/action_ryotaFragment_to_videoRyotaFragment"
+            app:destination="@id/videoRyotaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sakuragiFragment"
+        android:name="cl.bootcamp.ind_12.SakuragiFragment"
+        android:label="fragment_sakuragi"
+        tools:layout="@layout/fragment_sakuragi" >
+        <action
+            android:id="@+id/action_sakuragiFragment_to_videoSakuragiFragment"
+            app:destination="@id/videoSakuragiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoSakuragiFragment"
+        android:name="cl.bootcamp.ind_12.VideoSakuragiFragment"
+        android:label="fragment_video_sakuragi"
+        tools:layout="@layout/fragment_video_sakuragi" />
+    <fragment
+        android:id="@+id/videoAkagiFragment"
+        android:name="cl.bootcamp.ind_12.VideoAkagiFragment"
+        android:label="fragment_video_akagi"
+        tools:layout="@layout/fragment_video_akagi" />
+    <fragment
+        android:id="@+id/videoMitsuiFragment"
+        android:name="cl.bootcamp.ind_12.VideoMitsuiFragment"
+        android:label="fragment_video_mitsui"
+        tools:layout="@layout/fragment_video_mitsui" />
+    <fragment
+        android:id="@+id/videoRukawaFragment"
+        android:name="cl.bootcamp.ind_12.VideoRukawaFragment"
+        android:label="fragment_video_rukawa"
+        tools:layout="@layout/fragment_video_rukawa" />
+    <fragment
+        android:id="@+id/videoRyotaFragment"
+        android:name="cl.bootcamp.ind_12.VideoRyotaFragment"
+        android:label="fragment_video_ryota"
+        tools:layout="@layout/fragment_video_ryota" />
 </navigation>
