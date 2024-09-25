@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import cl.bootcamp.ind_12.databinding.FragmentAkagiBinding;
 import cl.bootcamp.ind_12.databinding.FragmentMitsuiBinding;
 
 public class MitsuiFragment extends Fragment {
@@ -27,9 +26,9 @@ public class MitsuiFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnVideo.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_mitsuiFragment_to_videoMitsuiFragment);
-        });
+        binding.btnVideo.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_mitsuiFragment_to_videoMitsuiFragment));
+        binding.fabBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        binding.fabHome.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_mitsuiFragment_to_firstFragment));
 
     }
 }

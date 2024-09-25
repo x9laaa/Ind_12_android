@@ -33,7 +33,9 @@
             app:destination="@id/mitsuiFragment" />
         <action
             android:id="@+id/action_secondFragment_to_rukawaFragment"
-            app:destination="@id/rukawaFragment" />
+            app:destination="@id/rukawaFragment"
+
+            />
     </fragment>
     <fragment
         android:id="@+id/akagiFragment2"
@@ -43,6 +45,14 @@
         <action
             android:id="@+id/action_akagiFragment2_to_videoAkagiFragment"
             app:destination="@id/videoAkagiFragment" />
+        <action
+            android:id="@+id/action_akagiFragment2_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/mitsuiFragment"
@@ -52,6 +62,14 @@
         <action
             android:id="@+id/action_mitsuiFragment_to_videoMitsuiFragment"
             app:destination="@id/videoMitsuiFragment" />
+        <action
+            android:id="@+id/action_mitsuiFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/rukawaFragment"
@@ -61,6 +79,14 @@
         <action
             android:id="@+id/action_rukawaFragment_to_videoRukawaFragment"
             app:destination="@id/videoRukawaFragment" />
+        <action
+            android:id="@+id/action_rukawaFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/ryotaFragment"
@@ -70,6 +96,14 @@
         <action
             android:id="@+id/action_ryotaFragment_to_videoRyotaFragment"
             app:destination="@id/videoRyotaFragment" />
+        <action
+            android:id="@+id/action_ryotaFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/sakuragiFragment"
@@ -79,30 +113,82 @@
         <action
             android:id="@+id/action_sakuragiFragment_to_videoSakuragiFragment"
             app:destination="@id/videoSakuragiFragment" />
+        <action
+            android:id="@+id/action_sakuragiFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/videoSakuragiFragment"
         android:name="cl.bootcamp.ind_12.VideoSakuragiFragment"
         android:label="fragment_video_sakuragi"
-        tools:layout="@layout/fragment_video_sakuragi" />
+        tools:layout="@layout/fragment_video_sakuragi" >
+        <action
+            android:id="@+id/action_videoSakuragiFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+    </fragment>
     <fragment
         android:id="@+id/videoAkagiFragment"
         android:name="cl.bootcamp.ind_12.VideoAkagiFragment"
         android:label="fragment_video_akagi"
-        tools:layout="@layout/fragment_video_akagi" />
+        tools:layout="@layout/fragment_video_akagi" >
+        <action
+            android:id="@+id/action_videoAkagiFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+    </fragment>
     <fragment
         android:id="@+id/videoMitsuiFragment"
         android:name="cl.bootcamp.ind_12.VideoMitsuiFragment"
         android:label="fragment_video_mitsui"
-        tools:layout="@layout/fragment_video_mitsui" />
+        tools:layout="@layout/fragment_video_mitsui" >
+        <action
+            android:id="@+id/action_videoMitsuiFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
     <fragment
         android:id="@+id/videoRukawaFragment"
         android:name="cl.bootcamp.ind_12.VideoRukawaFragment"
         android:label="fragment_video_rukawa"
-        tools:layout="@layout/fragment_video_rukawa" />
+        tools:layout="@layout/fragment_video_rukawa" >
+        <action
+            android:id="@+id/action_videoRukawaFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+    </fragment>
     <fragment
         android:id="@+id/videoRyotaFragment"
         android:name="cl.bootcamp.ind_12.VideoRyotaFragment"
         android:label="fragment_video_ryota"
-        tools:layout="@layout/fragment_video_ryota" />
+        tools:layout="@layout/fragment_video_ryota" >
+        <action
+            android:id="@+id/action_videoRyotaFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+    </fragment>
 </navigation>

@@ -35,6 +35,7 @@ public class VideoAkagiFragment extends Fragment {
         webView.loadUrl("https://www.youtube.com/watch?v=KV3vz1cB5c8");
 
         binding.fabBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        binding.fabHome.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_videoAkagiFragment_to_firstFragment));
 
         return binding.getRoot();
     }

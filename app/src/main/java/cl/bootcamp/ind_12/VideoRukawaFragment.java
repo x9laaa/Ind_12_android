@@ -38,6 +38,7 @@ public class VideoRukawaFragment extends Fragment {
         webView.loadUrl("https://www.youtube.com/watch?v=8bKSAMP4O0M");
 
         binding.fabBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        binding.fabHome.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_videoRukawaFragment_to_firstFragment));
 
         return binding.getRoot();
     }

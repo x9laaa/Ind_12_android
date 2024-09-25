@@ -38,6 +38,7 @@ public class VideoRyotaFragment extends Fragment {
         webView.loadUrl("https://www.youtube.com/watch?v=3FocobH9g88");
 
         binding.fabBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        binding.fabHome.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_videoRyotaFragment_to_firstFragment));
 
         return binding.getRoot();
     }

@@ -25,9 +25,11 @@ public class SakuragiFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnVideosakuragi.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_sakuragiFragment_to_videoSakuragiFragment);
-        });
+        binding.btnVideosakuragi.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_sakuragiFragment_to_videoSakuragiFragment));
+        binding.fabBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        binding.fabHome.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_sakuragiFragment_to_firstFragment));
+
+
 
     }
 }

@@ -36,6 +36,7 @@ public class VideoMitsuiFragment extends Fragment {
         webView.loadUrl("https://www.youtube.com/watch?v=rg1XnlQ-k0U");
 
         binding.fabBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        binding.fabHome.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_videoMitsuiFragment_to_firstFragment));
 
         return binding.getRoot();
     }

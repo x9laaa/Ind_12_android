@@ -37,6 +37,8 @@ public class VideoSakuragiFragment extends Fragment {
 
         binding.fabBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
 
+        binding.fabHome.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_videoSakuragiFragment_to_firstFragment));
+
         return binding.getRoot();
     }
 }

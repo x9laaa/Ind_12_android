@@ -27,9 +27,9 @@ public class AkagiFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnVideo.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_akagiFragment2_to_videoAkagiFragment);
-        });
+        binding.btnVideo.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_akagiFragment2_to_videoAkagiFragment));
+        binding.fabBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        binding.fabHome.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_akagiFragment2_to_firstFragment));
 
     }
 }

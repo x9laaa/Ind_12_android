@@ -25,9 +25,9 @@ public class RukawaFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnVideo.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_rukawaFragment_to_videoRukawaFragment);
-        });
+        binding.btnVideo.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_rukawaFragment_to_videoRukawaFragment));
+        binding.fabBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        binding.fabHome.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_rukawaFragment_to_firstFragment));
 
     }
 }
